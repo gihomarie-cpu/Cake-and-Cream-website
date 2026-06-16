@@ -1,0 +1,111 @@
+body{
+    background-color: lightblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    padding:0;
+    margin: 0.5em;
+}
+li{
+    color: rgb(197, 226, 29);
+}
+.list{
+    background-color: rgb(58, 128, 128);
+}
+a{
+    background-color:white;
+}
+nav ul  a{
+    text-decoration: none;
+    background-color:lightblue;
+    color:rgb(39, 39, 219);
+}
+.nav-bar{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    list-style-type: none;
+   }
+.introduction{
+    display: flex;
+    gap: 300px;
+}
+
+.dropdown-content{
+    display: none;
+    position:absolute;
+    background-color: antiquewhite;
+    list-style: none;
+    padding: 10px;
+    min-width: 150px;
+}
+.dropdown-content li {
+    padding: 5px 0;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.thank{
+    
+    background-color: rgb(171, 195, 204);
+    font-size: larger;
+
+    font-weight: 600;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    padding-left: 15px;
+    margin-top: 0;
+    margin-left:25% ;
+    align-content: center;
+    color: rgb(236, 228, 228);
+  font-style: oblique;
+  font-size: 25px;
+  text-align: center;
+
+
+    animation: myOpacity;
+    animation-duration: 10s;
+    animation-play-state: running;
+    animation-delay: 5s;
+    animation-iteration-count: 3;
+    
+}
+@keyframes myOpacity{
+    from{ 
+        opacity: 0;
+    }
+    to{
+       opacity: 1;
+    }
+}
+
+
+.payment-section{
+    text-align:center ;
+    margin-top: 20px;
+    padding: 15px;
+    background: #f5f7fb;
+    border-radius: 12px;
+}
+.payment-methods{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.payment-section p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.payment-methods img{
+    height:40px;
+    object-fit: contain;
+    filter: grayscale(20%);
+    transition: 0.3s;
+}
+.payment-methods img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}

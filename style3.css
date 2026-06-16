@@ -1,0 +1,14 @@
+body{
+    background-color: azure;
+}
+h1{
+    color: brown;
+}
+h2{
+    color: rgb(15, 96, 69);
+}
+.nav-bar{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
