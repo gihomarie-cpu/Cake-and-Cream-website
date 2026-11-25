@@ -33,3 +33,15 @@ h2{
         height: auto;
     }
 }
+
+.nav-bar a .fa,
+.dropdown-content a .fa {
+    margin-right: 8px;
+}
+.product-list a .fa {
+    font-size: 18px;
+    margin-right: 8px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
