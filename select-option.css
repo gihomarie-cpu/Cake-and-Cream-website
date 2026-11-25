@@ -144,3 +144,101 @@ input:focus, select:focus{
   transform: scale(1.1);
   filter: grayscale(0%);
 }
+
+/* Order message section started */
+.order-message {
+    display: none;
+    margin: 15px auto;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.order-message--pending,
+.order-message--success,
+.order-message--error {
+    display: block;
+}
+
+.order-message--pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.order-message--success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.order-message--error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Responsive design - mobile section started */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+        margin: 0.5em;
+    }
+
+    .introduction {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .introduction img {
+        max-width: 180px;
+        height: auto;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        min-width: unset;
+        text-align: center;
+    }
+
+    .form-container {
+        padding: 0 10px;
+    }
+
+    form {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-group label,
+    .form-group input,
+    .form-group select,
+    textarea {
+        width: 100%;
+    }
+
+    .submit {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .payment-methods {
+        gap: 12px;
+    }
+
+    .payment-methods img {
+        width: 90px;
+        height: auto;
+    }
+}

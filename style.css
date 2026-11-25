@@ -130,3 +130,56 @@ transition: all 0.3s ease;
 .icons a i{
     filter: brightness(0) invert(1);
 }
+
+/* Responsive design - mobile section started */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .introduction {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .introduction img {
+        max-width: 180px;
+        height: auto;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        min-width: unset;
+        text-align: center;
+    }
+
+    #intro-image,
+    section img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .icons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .payment-methods {
+        gap: 12px;
+    }
+
+    .payment-methods img {
+        width: 90px;
+        max-width: 100%;
+        height: auto;
+    }
+}

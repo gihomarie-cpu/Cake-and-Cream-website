@@ -33,7 +33,9 @@
 <div class="form-container">
       <h2>Customer information</h2> 
 
-  <form action="select-option2.php" method="POST">
+  <!-- Order form and thank-you message section -->
+  <div id="order-message" class="order-message" aria-live="polite"></div>
+  <form action="select-option2.php" method="POST" id="order-form">
     <div class="form-group">
     <label for="size">Select cake size</label>
     <select name="cake_size" id="size-option">
@@ -103,6 +105,8 @@
         <img src="https://tse4.mm.bing.net/th/id/OIP.imXeeuMnxFyHtKDoM0nseAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"width="120" alt="verve">
      </div>
       </div>
-     </footer> 
+     </footer>
+  <!-- Select option JavaScript for thank-you message -->
+  <script src="select-option.js"></script>
 </body>
 </html>

@@ -66,3 +66,41 @@ border-radius: 10px;
     border-radius: 20px;
 
 }
+
+/* Responsive design - mobile section started */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .introduction {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .introduction img {
+        max-width: 180px;
+        height: auto;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        min-width: unset;
+        text-align: center;
+    }
+
+    .container img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 0 20px 0;
+    }
+}

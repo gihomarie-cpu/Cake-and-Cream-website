@@ -35,3 +35,15 @@ ul{
   transform: scale(1.1);
   filter: grayscale(0%);
 }
+
+/* Responsive design - mobile section started */
+@media (max-width: 768px) {
+    .payment-methods {
+        gap: 12px;
+    }
+
+    .payment-methods img {
+        width: 90px;
+        height: auto;
+    }
+}
