@@ -1,4 +1,4 @@
-body{
+﻿body{
     background-color: lightblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
@@ -66,7 +66,9 @@ justify-content: center;
 .item img{
     width: 100%;
     height: 220px;
+    object-fit: cover;
     border-radius: 10px;
+    display: block;
 }
 .payment-section{
     text-align:center ;
@@ -128,19 +130,20 @@ justify-content: center;
     }
 
     .container {
-        gap: 15px;
+        gap: 10px;
+        justify-content: center;
     }
 
     .item {
-        width: 100%;
-        max-width: 280px;
-        height: auto;
+        width: calc(50% - 10px);
     }
 
     .item img {
         width: 100%;
-        max-width: 220px;
-        height: auto;
+        max-width: 100%;
+        height: 180px;
+        object-fit: cover;
+        display: block;
     }
 
     .payment-methods {
@@ -164,3 +167,6 @@ justify-content: center;
     text-align: center;
     vertical-align: middle;
 }
+
+
+

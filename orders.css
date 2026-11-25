@@ -1,4 +1,4 @@
-body{
+﻿body{
     background-color: lightblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
@@ -123,9 +123,11 @@ justify-content: center;
     text-align: center;
 }
 .item img{
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
     border-radius: 10px;
+    display: block;
 }
 .item{
     border: 2px solid white;
@@ -135,9 +137,6 @@ justify-content: center;
     width: min-content;
     height:350px ;
     max-height: none;
-}
-.item img{
-    padding-bottom: 0;
 }
   #option{
     width: 210px;
@@ -219,19 +218,20 @@ justify-content: center;
     }
 
     .container {
-        gap: 15px;
+        gap: 10px;
+        justify-content: center;
     }
 
     .item {
-        width: 100%;
-        max-width: 280px;
-        height: auto;
+        width: calc(50% - 10px);
     }
 
     .item img {
         width: 100%;
-        max-width: 220px;
-        height: auto;
+        max-width: 100%;
+        height: 180px;
+        object-fit: cover;
+        display: block;
     }
 
     #option {
@@ -254,3 +254,6 @@ justify-content: center;
         height: auto;
     }
 }
+
+
+

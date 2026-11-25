@@ -1,4 +1,4 @@
-body{
+﻿body{
     background-color: lightblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
@@ -97,11 +97,19 @@ border-radius: 10px;
         text-align: center;
     }
 
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
+
     .container img {
-        width: 100%;
+        width: calc(50% - 8px);
         max-width: 100%;
-        height: auto;
-        margin: 0 0 20px 0;
+        height: 160px;
+        object-fit: cover;
+        margin: 0;
     }
 }
 
@@ -116,3 +124,4 @@ border-radius: 10px;
     text-align: center;
     vertical-align: middle;
 }
+
